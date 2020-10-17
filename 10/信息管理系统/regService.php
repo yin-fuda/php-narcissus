@@ -9,9 +9,9 @@ if($name==null || $pass1==null){
 	echo "两次密码不一致";
 }else{
 	$server="localhost";
-	$username="root";
-	$password='';
-	$dbname="studb";
+	$username="数据库用户名";
+	$password='数据库的密码';
+	$dbname="数据库里面的表";
 	$b=0;
 	$conn=new mysqli($server,$username,$password,$dbname);
 	$sql = "select * from users";
